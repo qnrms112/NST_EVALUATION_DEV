@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+#infoBox{display: grid; grid-template-columns:1fr 5fr; grid-gap:10px; margin-bottom:20px;}
+#infoBox #myImg{display: block; width:100%; background-color:#eee;} 
+#infoBox table tbody tr td,#myState table tr td{width:15%; text-align:center; padding-left:0;}
+#infoBox table tbody tr td:nth-child(2n), #myState table tr td:nth-child(2n){width:30%; text-align:left; padding-left:1rem;}
+#infoBox table tr:first-child td:nth-child(2n){background-color:#fff; color:#000;}
+
+#infoBox table tr td:first-child, #infoBox table tr td:nth-child(3)  {
+	background-color:#0a2742; color:#fff;
+}
+
+#myState table{width:100%;}

@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0; letter-spacing:0;list-style: none; text-decoration: none;font-family:'NanumSquareNeo-Variable';}
+.clearfix:before,.clearfix:after{content:''; display: block; clear: both;}
+span.titleImg{display:block; width:52px; height:14px; 
+	background-image:url("../img/iconimg.png"); background-repeat:no-repeat;
+	background-position:0 -137px;
+	}
+.titleStyle{ padding:10px 0 10px 1rem;}
+h2{font-size:15px;}
+body{margin-top:101px;}
+.mainWrap{margin-bottom:100px; height: 100vh;}
+
+/*header - coursor out*/
+header .colorBox 
+,header .menu_info,header .menu_info p
+,header .menu_info p span
+,header .menu_info li a
+,header .menu_info .depth01:hover .openMenu
+,header:hover .menu_info .depth01 > li > a:hover:before
+,header:hover .menu_info .depth01 > li > a:hover:after
+,header .menu_info_sub.opener
+,.toDoList #tabHeader .tabBox .tab.active{transition:all  .2s;}
+
+header{
+	background-image:url("../img/page_title_bg2.png"); background-repeat:no-repeat; background-size:100%; 
+	background-position: bottom;
+	display:block;
+	position:fixed; top:0; width:100%; box-shadow:0px -1px 14px #56647e; z-index: 999;
+	
+	}
+.inner{width:1350px; margin:0 auto;}
+header .colorBox{background-color:rgba(10,39,66,0.85); position:relative;}/*background-color:#0e3b64d9*/
+
+header .login_info{background-color:#fff; color:#000; font-size:0.8rem; padding: 5px 0;}
+header .login_info p{text-align:right; /* width:1350px; margin:0 auto; */ display: block;}
+header h1{
+	width: 150px;
+    height: 35px;
+    display: inline-block;
+    background-image: url(../img/iconimg.png);
+    background-size: 400px;
+    background-position: -90px -364px;
+    background-repeat: no-repeat;
+    margin: 1rem 3rem 1rem 2rem;
+	}
+header h1{cursor:pointer;}
+header nav{display:inline-block;vertical-align: top; margin-top:1.5rem; margin-left:40px;}
+header .menu_info{/* width:1350px; margin:0 auto; */ display:grid; grid-template-columns: 15% 85%;}
+header .menu_info ul.depth01{display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; text-align:center;}
+header .menu_info .depth01 > li > a{
+	display: inline-block; font-size:1.1rem; color:#fff; padding:12px 0 22px;}
+header .menu_info select{display: inline-block; width:150px; height:30px; border-radius:0; border:1px solid #000; font-family: 'NanumSquareNeo-variable'; font-size:15px; }
+
+
+/*jQery 사용 subMenu 만들기*/
+
+header .menu_info_sub{
+	background-color:#e9e9e9; box-shadow:0 2px 5px #d3d3d3; position:absolute; width:100%;
+	visibility: hidden; opacity: 0; top:80px;
+	}
+header .menu_info_sub .inner{display: grid; grid-template-columns:15% 85%; text-align:center;}
+header .menu_info_sub .menuTitle{margin:auto 0;}
+header .menu_info_sub .openMenu{margin-left:40px; display: grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
+header .menu_info_sub .openMenu ul:first-child{border-left:1px dashed #afafaf; }
+header .menu_info_sub .openMenu ul{padding:10px 0; border-right:1px dashed #afafaf; }
+header .menu_info_sub .openMenu ul li:hover{background-color:#fff;}
+header .menu_info_sub .openMenu ul li a{color:#222; padding:10px 0; display: block;}
+
+header .menu_info_sub.opener{visibility: visible; opacity: 1; top:101px; z-index: -10;}
+
+
+
+/**************************leftBox 있을때***************************************************/
+#container .inner{display: grid; grid-template-columns:1fr 5fr; grid-gap:20px;}
+#container .leftBox{display: block;  height:100%;}
+
+/******************************************************************************************/
+@media screen and (max-width:1350px){
+	.inner{width:90%;}
+}

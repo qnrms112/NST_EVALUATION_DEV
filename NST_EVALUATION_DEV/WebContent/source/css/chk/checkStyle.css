@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+
+#basicCheck{
+	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
+	display: block; border: 1px solid #b7b7b7; width:80%;
+	transform:translate(-50%,-25%);/*  padding:20px; */
+	}
+#basicCheck .paddingBox{padding:20px;}	
+#basicCheck:before{
+	content:'확인';display: block; width:100%; background-color:#0a2742; color:#fff;
+	text-align:center; padding:1rem 0; margin-bottom:20px;
+	}
+	
+#basicCheck .popClose{display: block; width:30px; height:30px; border:1px solid #000;}
+
+.fixDay,.choiceD{font-size:12px;}
+.choiceD{margin:0 1rem;}
+
+/**//* 
+.table2 tr:nth-child(2) td */
+.table2 tr:nth-child(2){grid-template-columns:1fr 3fr 1fr 6fr; }
+.table2 tr:nth-child(3){grid-template-columns:1fr 10fr; }
+
+/**/
+.titleStyleSub{ padding:0; position:relative;}
+.titleStyleSub .modifyBtn{position: absolute; right:0; top:-5px; padding:0.5rem 2rem;}
+
+/**/
+#groupCheck .table5 tr td:nth-child(2){text-align: left; padding-left:2rem;}

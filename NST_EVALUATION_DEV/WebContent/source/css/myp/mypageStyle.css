@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#infoBox{display: grid; grid-template-columns:1fr 5fr; grid-gap:10px; margin-bottom:20px;}
+#infoBox #myImg{display: block; width:100%; background-color:#eee;} 
+
+.checkInfo tr:nth-child(2),
+.checkInfo tr:nth-child(4),
+.checkInfo tr:nth-child(7){grid-template-columns:1fr 5fr !important;}
+
+.checkInfo tr td:nth-child(2n),
+#myState tr td:nth-child(2n){text-align: left; padding-left:2rem;}
+
+
+
+/* .checkInfo tr:nth-child(2) td:nth-child(2),
+.checkInfo tr:nth-child(4) td:nth-child(2),
+.checkInfo tr:nth-child(7) td:nth-child(2){text-align: left; padding-left:2rem;} */
