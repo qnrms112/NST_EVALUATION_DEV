@@ -4,11 +4,35 @@
 <link rel="stylesheet" type="text/css" href="././source/css/common/leftStyle.css">
 <link rel="stylesheet" type="text/css" href="././source/css/common/subCommon.css">
 <!-- <script type="text/javascript" src="././source/css/common/subCommon.css"></script> -->
+
+<script type="text/javascript">
+
+$(function(document) {
+	changeClassByURL();
+});
+
+function changeClassByURL() {
+  var currentURL = getCurrentURL();
+
+  if (currentURL.includes("checkmain.jsp")) {
+    document.getElementById("menu-check").className = "depth01 active";
+  } else if (currentURL.includes("meetingmain.jsp")) {
+    document.getElementById("menu-meeting").className = "depth01 active";
+  } else if (currentURL.includes("mypagemain.jsp")) {
+    document.getElementById("menu-mypage").className = "depth01 active";
+  }
+}
+
+function getCurrentURL() {
+    return window.location.href;
+ }
+</script>
+
 <div class="leftBox">
-	<div>
+	<div class="depth01" id="menu-check">
 		<h4>운영계획점검</h4>
 		<ul class="depth02">
-			<li class="">
+			<li>
 				<a href="">점검준비</a>
 				<ul class="depth03 active">
 					<li><a href="" style="background-color: #bfced9;">점검계획</a></li>
@@ -18,7 +42,7 @@
 			</li>
 			<li>
 				<a href="">점검진행</a>
-				<ul class="depth03 active">
+				<ul class="depth03">
 					<li><a href="">운영계획서 초안</a></li>
 					<li><a href="">점검의견서 초안</a></li>
 					<li><a href="">기관운영계획서</a></li>
@@ -27,10 +51,32 @@
 			</li>
 			<li>
 				<a href="">점검결과</a>
-				<ul class="depth03 active">
+				<ul class="depth03">
 					<li><a href="">최종검토서</a></li>
 					<li><a href="">운영계획 발표</a></li>
 				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="depth01" id="menu-meeting">
+		<h4>회의실</h4>
+		<ul class="depth02">
+			<li>
+				<a href="">점검회의</a>
+			</li>
+			<li>
+				<a href="">평가회의</a>
+			</li>
+		</ul>
+	</div>
+	<div class="depth01" id="menu-mypage">
+		<h4>마이페이지</h4>
+		<ul class="depth02">
+			<li>
+				<a href="">내정보</a>
+			</li>
+			<li>
+				<a href="">전자알림</a>
 			</li>
 		</ul>
 	</div>

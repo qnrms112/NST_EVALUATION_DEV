@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <link rel="stylesheet" type="text/css" href="source/css/mypageStyle.css">
-<jsp:include page="WEB-INF/tilesLayout/header2.jsp" flush="true"></jsp:include>
+<jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
 
 <div id="container">
 	<!-- test/s -->

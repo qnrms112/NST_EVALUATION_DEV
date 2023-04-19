@@ -43,7 +43,7 @@
 		</div>
 		<div class="menu_info_sub" >
 			<div class="inner">
-				<div class="menuTitle">운영계획점검</div>
+				<div class="menuTitle"></div>
 				<div class="openMenu">
 					<ul class="depth02">
 						<li><a href="">점검준비</a></li>
