@@ -14,7 +14,7 @@
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">점검계획 상세보기</h2>
 				<table class="table2 basicCheck">
-					<div>기본정보</div>
+					<h6 class="titleStyleSub">기본정보</h6>
 					<tbody>
 						<tr>
 							<td>점검명</td>
@@ -37,9 +37,9 @@
 					</tbody>
 				</table>
 				<table class="table3">
-					<div class="titleStyleSub">추진일정
+					<h6 class="titleStyleSub">추진일정
 						<div class="btn modifyBtn">수정</div>
-					</div>
+					</h6>
 					<thead>
 						<tr>
 							<th>기본정보</th>
@@ -66,9 +66,12 @@
 					</tbody>
 				</table>
 				<table class="table4">
-					<div class="titleStyleSub">점검단구성
+					<h6 class="titleStyleSub">점검단구성
 						<div class="btn modifyBtn">수정</div>
-					</div>
+					</h6>
+<!-- 					<div class="titleStyleSub">점검단구성
+						<div class="btn modifyBtn">수정</div>
+					</div> -->
 					<thead>
 						<tr>
 							<th>성명</th>

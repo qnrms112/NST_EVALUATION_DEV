@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<link rel="stylesheet" type="text/css" href="source/css/mtr/meetingStyle_table.css">
+<link rel="stylesheet" type="text/css" href="source/css/mtr/meetingStyle_table2.css">
 <jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
 
 <div id="container">
@@ -54,55 +54,20 @@
 							<table class="table2 meetingInfo">
 								<tbody>
 									<tr>
-										<td>회의명</td>
-										<td><input type="text" value="예시 회의명"></td>
+										<td>기관명</td>
+										<td><select><option>한국생산기술연구원</option></select></td>
 										<td>점검명</td>
-										<td><input type="text" value="예시 점검명"></td>
+										<td><input type="text" value="2023 한국생산기술연구원 운영계획점검"></td>
 									</tr>
 									<tr>
-										<td>회의시작일시</td>										
-										<td><input type="date"></td>										
+										<td>기간</td>										
+										<td><input type="date">~<input type="date"></td>										
 										<td class="label1">응답기한</td>										
 										<td><input type="date"></td>										
 									</tr>
-									<tr>
-										<td>담당자</td>
-										<td><input type="text" value="홍길동"></td>
-										<td>연락처</td>
-										<td><input type="text" value="010-xxxx-xxxx"></td>
-									</tr>
-									<tr>
-										<td >
-											참석자
-											<div class="btnBox-s">
-												<div class="btn2">추가</div>
-												<div class="btn2">제거</div>
-											</div>
-										</td>
-										<td >
-											<table class="table6">
-												<thead>
-													<tr>
-														<th><input onclick='selectAll(this)' type="checkbox"></th>
-														<th>이름</th>
-														<th>소속</th>
-														<th>직책</th>
-														<th>이메일</th>
-														<th>연락처</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td><input name="peopleInfo" type="checkbox"></td>
-														<td>김길동</td>
-														<td>서울대학교</td>
-														<td>단장</td>
-														<td>sample@edsoft.kr</td>
-														<td>010-xxx-xxxx</td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
+									<tr style="display:grid; grid-template-columns:1fr 5fr !important;">
+										<td>비고</td>
+										<td><input type="text" value="점검에 대한 간단한 설명"></td>
 									</tr>
 								</tbody>
 							</table>
@@ -151,18 +116,18 @@
 						<thead>
 							<tr>
 								<th>구분</th>
+								<th>기관명</th>
 								<th>점검명</th>
-								<th>추진일정</th>
-								<th>점검단등록</th>
-								<th>첨부파일</th>
+								<th>기간</th>
+								<th>비고</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<td>08</td>
 								<td><img class="logoIn" src="source/img/common/agency_logo8.png"><a href="meetingmain.jsp">한국생산기술연구원</a></td>
-								<td><a href="">작성중</a></td>
-								<td><a href="">미작성</a></td>
+								<td><a href="">2023 한국생산기술연구원 운영계획점검</a></td>
+								<td><a href="">2023.xx.xx~2023.xx.xx</a></td>
 								<td></td>
 							</tr>
 							<tr>

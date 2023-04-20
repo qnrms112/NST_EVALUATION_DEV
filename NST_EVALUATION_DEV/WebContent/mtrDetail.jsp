@@ -84,7 +84,7 @@ $(function(document) {
 									</tr>
 									<tr>
 										<td>참석자</td>
-										<td>
+										<td class="visitBox">
 											<table class="table7">
 												<thead>
 													<tr>

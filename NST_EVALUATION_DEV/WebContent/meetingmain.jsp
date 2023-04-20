@@ -33,14 +33,14 @@
 				</div>
 			
 				<span class="titleImg"></span>
-				<h2 class="titleStyle">미팅룸</h2>
+				<h2 class="titleStyle">2023 한국생산기술연구원 운영계획점검</h2>
 				<!-- 점검계획 기본정보 입력 -->
-				<div  class="addCheck">회의실 개설</div>
+				<!-- <div  class="addCheck">회의실 개설</div>
 				<div id="basicCheck">
 					<div class="paddingBox">
 						<span class="titleImg"></span>
 						<h2 class="titleStyle">기본정보</h2>
-						<!-- <div class="popClose">닫기</div> -->
+						<div class="popClose">닫기</div>
 						<script type="text/javascript">
 							function selectAll(selectAll){
 								const checkboxes = document.getElementsByName('peopleInfo');
@@ -112,7 +112,7 @@
 						<div class="signUp btn">등록</div>
 						<div class="recall btn">취소</div>
 					</div>
-				</div>
+				</div> -->
 				<script type="text/javascript">
 					function basicPopup(){
 						
@@ -147,15 +147,15 @@
 				
 				<!-- 점검계획 기본정보 입력 후 리스트 생성 -->
 				<div id="roomCard">
-					<div class="card">
+					<div class="card" >
 						<table>
 							<tbody>
 								<tr>
 									<td>
 										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
+											<div><!-- <a href="">사전<br/>설명회</a> --></div>
 											<ul>
-												<li>개설일 : 2022-00-00</li>
+												<li>기간 : 2022-00-00 ~ 2022-00-00</li>
 												<li>관리자 : 홍길동</li>
 												<li>문의처 : 010-000-0000</li>
 											</ul>
@@ -163,13 +163,10 @@
 									</td>
 								</tr>
 								<tr>
-									<td>title</td>
+									<td onClick="location.href='mtrDetail.jsp'" style="cursor:pointer;">사전설명회</td>
 								</tr>
 								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
+									<td><div class="roomInfo">2023 한국생산기술연구원 운영계획점검 회의실에 관한 설명글 입니다.</div></td>
 								</tr>
 							</tbody>
 						</table>
@@ -180,9 +177,9 @@
 								<tr>
 									<td>
 										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
+											<div><!-- <a href="">현장<br/>점검</a> --></div>
 											<ul>
-												<li>개설일 : 2022-00-00</li>
+												<li>기간 : 2022-00-00 ~ 2022-00-00</li>
 												<li>관리자 : 홍길동</li>
 												<li>문의처 : 010-000-0000</li>
 											</ul>
@@ -190,175 +187,10 @@
 									</td>
 								</tr>
 								<tr>
-									<td>title</td>
+									<td>현장점검</td>
 								</tr>
 								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div class="card">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="cardTitle">
-											<div><a href="">사전<br/>설명회</a></div>
-											<ul>
-												<li>개설일 : 2022-00-00</li>
-												<li>관리자 : 홍길동</li>
-												<li>문의처 : 010-000-0000</li>
-											</ul>
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td>title</td>
-								</tr>
-								<tr>
-									<td><div class="roomInfo">아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.아무내용이나 적는 공간입니다.</div></td>
-								</tr>
-								<tr>
-									<td><input type="button" value="회의 참여하기" onclick="location.href='checkDetail.jsp'"></td>
+									<td><div class="roomInfo">2023 한국생산기술연구원 운영계획점검 회의실에 관한 설명글 입니다.</div></td>
 								</tr>
 							</tbody>
 						</table>

@@ -28,7 +28,7 @@
 #basicCheck{
 	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
 	display: block; border: 1px solid #b7b7b7; width:80%;
-	transform:translate(-50%,-100%);/*  padding:20px; */
+	transform:translate(-50%,-50%);/*  padding:20px; */
 	}
 
 #basicCheck .paddingBox{padding:20px;}	

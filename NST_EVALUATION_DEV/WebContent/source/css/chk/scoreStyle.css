@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+
+
+.table2 tr td:nth-child(2n){text-align: left; padding-left:1rem;}
+.titleImg{margin-top:20px;}
+
+.grid-3{display: grid; grid-template-columns:1fr 1fr 1fr; }
+.conBox{padding:0.5rem; border:1px solid #efefef;}
+.conBox:nth-child(2){padding:0.5rem; border-left:0; border-right:0;}
+
+.scoreTitle{text-align:center; border-bottom:1px solid #efefef; padding:.5rem 0;}
+/* .scoreTitle:after{
+	content:''; display: block; width:10px;
+	 border-bottom:1px solid red;
+	 border-left:1px solid red;
+	 border-right:1px solid red;
+	 } */
+
+.conBox table, .conBox thead, .conBox th, .conBox tbody, .conBox tbody td{border:0; text-align:left; padding:.5rem 1rem;}
+.conBox tbody { }
+.conBox tbody tr{display: grid; grid-template-columns:1fr; border:1px solid red;border-radius:10px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

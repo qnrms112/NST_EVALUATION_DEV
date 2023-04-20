@@ -30,6 +30,7 @@
 #basicCheck .table2.basicCheck tr td:nth-child(2n){text-align: left; padding-left:1rem;}
 /**/
 .titleStyleSub{ padding:0; position:relative;}
+ h6.titleStyleSub{font-size:16px; font-weight:normal; margin:1rem 0;}
 .titleStyleSub .modifyBtn{position: absolute; right:0; top:-5px; padding:0.5rem 2rem;}
 
 /**/
@@ -57,7 +58,7 @@ table.step1 tbody tr input {border-bottom:1px solid #efefef; padding:0; width:10
 table.step1 tbody tr input:focus {border-bottom:0;}
 
 /*버튼 스타일*/
-.btnTop{display: grid; grid-template-columns:1fr 1fr; width:200px; grid-gap:20px; position:absolute; top:50px; right:20px;}
+.btnTop{display: grid; grid-template-columns:1fr 1fr; width:200px; grid-gap:20px; position:absolute; top:30px; right:20px;}
 .btnTop .btn{padding:0;}
 .btnTop input{width:100%;  vertical-align: middle; padding:.5rem;}
 
