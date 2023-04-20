@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.scheduleList{position:relative;}
+.scheduleList div.addCheck{
+	padding:10px 1rem; background-color:#0a2742; border:1px solid #efefef; color:#fff; 
+	position: absolute; right:20px; top:30px; cursor: pointer;
+	}
+
+#basicCheck{
+	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
+	display: block; border: 1px solid #b7b7b7; width:80%;
+	transform:translate(-50%,-25%);/*  padding:20px; */
+	}
+#basicCheck .paddingBox{padding:20px;}	
+#basicCheck:before{
+	content:'확인';display: block; width:100%; background-color:#0a2742; color:#fff;
+	text-align:center; padding:1rem 0; margin-bottom:20px;
+	}
+	
+
+.fixDay,.choiceD{font-size:12px;}
+.choiceD{margin:0 1rem;}
+/**/
+.tabBox{display: grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;}
+.tabBox .tab{text-align:center; border:1px solid #dbdbdb; border-bottom:0; background-color:#eee;  border-radius: 5px 5px 0 0; padding:0.5rem 0;}
+.tabBox .tab.active{background-color:#3474b1;}
+.tabBox .tab.active p{color:#fff;}
+.mtrBox{margin:10px 0 0 !important;}
+#tabContent{margin:0 0 10px;}
+
+/**/
+#groupCheck .table5 tr td:nth-child(2){text-align: left; padding-left:2rem;}
+
+.table2.meetingInfo{}
+.table2.meetingInfo tr:nth-child(1),
+.table2.meetingInfo tr:nth-child(5){grid-template-columns:1fr 2fr 1fr 2fr!important !important;}
+.table2.meetingInfo tr:nth-child(4){grid-template-columns:1fr 5fr !important;}
+.table2.meetingInfo tr:nth-child(4) > td:nth-child(2){padding:0; vertical-align: top;}
+.table2.meetingInfo .table7 tr{ 
+	display:grid; grid-template-columns:.5fr 2fr 2fr 2fr 3fr 3fr 1.5fr !important;
+	}
+.table2.meetingInfo > tr td:nth-child(2n){text-align: left; padding-left:2rem;}
+.table2.meetingInfo tr:nth-child(4) td:nth-child(2n){padding:0;}
+.table2.meetingInfo .table7 tr td{background-color:#fff !important; color:#000 !important;}
+
+/*회의실 메인 버튼클릭 팝업시 테이블 스타일*/
+.table2.meetingInfo > td:nth-child(2n){text-align:left; padding-left:2rem;}
+.table2.meetingInfo .table6 thead{border-top:0;}
+.table2.meetingInfo .table6 tr th:first-child,
+.table2.meetingInfo .table6 tr td:first-child{border-left:0;}
+
+/* .table2.meetingInfo .table6 tr td{padding-left:0 !important; text-align:center;} */
+
+/*회의실 상세화면 tab01 테이블 스타일*/
+#tabContent #tab01 .table2.meetingInfo tr td{}
+#tabContent #tab01 .table2.meetingInfo tr:nth-child(4) td:nth-child(2){padding:0;}
+#tabContent #tab01 .table2.meetingInfo .table7 tr td{padding:0.5rem 0 !important; vertical-align: middle;}
+#tabContent #tab01 .table2.meetingInfo .table7 thead,
+#tabContent #tab01 .table2.meetingInfo .table7 th:first-child,
+#tabContent #tab01 .table2.meetingInfo .table7 td:first-child{border-top:0; border-left:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

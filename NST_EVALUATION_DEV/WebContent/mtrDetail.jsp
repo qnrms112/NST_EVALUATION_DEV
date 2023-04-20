@@ -68,19 +68,19 @@ $(function(document) {
 								<tbody>
 									<tr>
 										<td  >회의명</td>
-										<td colspan="6"><input type="text"></td>
+										<td><input type="text"></td>
 									</tr>
 									<tr>
 										<td  >회의시작일시</td>										
-										<td colspan="3"><input type="date"></td>										
+										<td><input type="date"></td>										
 										<td  >응답기한</td>										
-										<td colspan="2"><input type="date"></td>										
+										<td  ><input type="date"></td>										
 									</tr>
 									<tr>
 										<td  >담당자</td>
-										<td colspan="3"><input type="text"></td>
+										<td  ><input type="text"></td>
 										<td  >연락처</td>
-										<td colspan="2"><input type="text"></td>
+										<td  ><input type="text"></td>
 									</tr>
 									<tr>
 										<td>참석자</td>
@@ -158,7 +158,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>요청일자</th>
+									<th>회의자료실</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>
@@ -190,7 +190,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>아니야</th>
+									<th>회의실관리</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>
@@ -222,7 +222,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>미친거</th>
+									<th>회의록</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>

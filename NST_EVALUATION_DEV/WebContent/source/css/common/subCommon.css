@@ -9,7 +9,8 @@ span.titleImg{display:block; width:52px; height:14px;
 .titleStyle{ padding:10px 0 10px 1rem;}
 h2{font-size:15px;}
 body{margin-top:101px;}
-.mainWrap{margin-bottom:100px; height: 100vh;}
+/* .mainWrap{margin-bottom:100px; height: 100%;} */
+
 
 /*header - coursor out*/
 header .colorBox 
@@ -49,7 +50,7 @@ header nav{display:inline-block;vertical-align: top; margin-top:1.5rem; margin-l
 header .menu_info{/* width:1350px; margin:0 auto; */ display:grid; grid-template-columns: 15% 85%;}
 header .menu_info ul.depth01{display:grid; grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr; text-align:center;}
 header .menu_info .depth01 > li > a{
-	display: inline-block; font-size:1.1rem; color:#fff; padding:12px 0 22px;}
+	display: inline-block; font-size:1.1rem; color:#fff; padding:12px 0 22px; width:100%;}
 header .menu_info select{display: inline-block; width:150px; height:30px; border-radius:0; border:1px solid #000; font-family: 'NanumSquareNeo-variable'; font-size:15px; }
 
 
@@ -73,7 +74,7 @@ header .menu_info_sub.opener{visibility: visible; opacity: 1; top:101px; z-index
 
 /**************************leftBox 있을때***************************************************/
 #container .inner{display: grid; grid-template-columns:1fr 5fr; grid-gap:20px;}
-#container .leftBox{display: block;  height:100%;}
+#container .leftBox{display: block;  height:100vh;}
 
 /******************************************************************************************/
 @media screen and (max-width:1350px){

@@ -13,7 +13,7 @@
 			<div class="scheduleList">
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">점검계획 상세보기</h2>
-				<table class="table2 ">
+				<table class="table2 basicCheck">
 					<div>기본정보</div>
 					<tbody>
 						<tr>
