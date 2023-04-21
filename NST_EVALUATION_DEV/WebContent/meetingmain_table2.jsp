@@ -74,7 +74,7 @@
 						</form>
 					</div>
 					<div class="btnBox">
-						<div class="signUp btn">등록</div>
+						<div class="signUp btn">개설</div>
 						<div class="recall btn">취소</div>
 					</div>
 				</div>
