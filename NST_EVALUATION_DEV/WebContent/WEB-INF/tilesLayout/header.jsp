@@ -64,6 +64,7 @@
 					<ul class="depth02">
 						<li><a href="">내정보</a></li>
 						<li><a href="">전자알림</a></li>
+						<li><a href="mypagePay1.jsp">수당신청</a></li>
 					</ul>
 				</div>
 			</div>

@@ -53,9 +53,9 @@ $(function(document) {
 							<div id="tabHeader02" class="tab">
 								<p>회의자료실</p>
 							</div>
-							<div id="tabHeader03" class="tab">
+							<!-- <div id="tabHeader03" class="tab">
 								<p>회의실 관리</p>
-							</div>
+							</div> -->
 							<div id="tabHeader04" class="tab">
 								<p>회의록</p>
 							</div>
@@ -186,7 +186,7 @@ $(function(document) {
 							</tbody>
 						</table>
 					</div>
-					<div id="tab02" class="tabContentStyle">
+					<!-- <div id="tab02" class="tabContentStyle">
 						<table>
 							<thead>
 								<tr>
@@ -217,7 +217,7 @@ $(function(document) {
 								</tr>
 							</tbody>
 						</table>
-					</div>
+					</div> -->
 					<div id="tab02" class="tabContentStyle">
 						<table>
 							<thead>
@@ -254,8 +254,8 @@ $(function(document) {
 				
 				<!-- 버튼 -->
 				<div class="btnBox">
-					<div class="btn"><a href="mtrDetailE.jsp">회의시작</a></div>
-					<div class="btn delRoom">회의취소</div>
+					<div class="btn"><a href="mtrDetailVisitCheck.jsp">수락</a></div>
+					<div class="btn rejectionBtn">거부</div>
 					<div class="btn">목록</div>
 				</div>
 				
@@ -266,8 +266,8 @@ $(function(document) {
 							<table class="table2 reasonBox">
 								<tbody>
 									<tr>
-										<td>취소사유</td>
-										<td><textarea>이건 누가봐도 텍스트</textarea></td>
+										<td>거부사유</td>
+										<td><textarea>거부사유 텍스트</textarea></td>
 									</tr>
 								</tbody>
 							</table>
@@ -281,7 +281,7 @@ $(function(document) {
 				<script type="text/javascript">
 					function basicPopup(){
 						
-						var $target = $('.delRoom'),
+						var $target = $('.rejectionBtn'),
 							$target2 = $('.recall'),
 							$parent = $target.parent(),
 							$box = $parent.next(),

@@ -42,11 +42,11 @@ function getCurrentURL() {
 			</li>
 			<li>
 				<a href="checkprocessmain.jsp">점검진행</a>
-				<ul class="depth03 ">
-					<li><a href="">운영계획서 초안</a></li>
-					<li><a href="">점검의견서 초안</a></li>
-					<li><a href="">기관운영계획서</a></li>
-					<li><a href="">점검의견서</a></li>
+				<ul class="depth03 active">
+					<li><a href="chkProcess01.jsp">운영계획서 초안</a></li>
+					<li><a href="chkProcess02.jsp">점검의견서 초안</a></li>
+					<li><a href="chkProcess03.jsp">기관운영계획서</a></li>
+					<li><a href="chkProcess04.jsp">점검의견서</a></li>
 				</ul>
 			</li>
 			<li>
