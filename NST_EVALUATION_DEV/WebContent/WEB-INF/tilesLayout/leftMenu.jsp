@@ -33,16 +33,16 @@ function getCurrentURL() {
 		<h4>운영계획점검</h4>
 		<ul class="depth02">
 			<li>
-				<a href="">점검준비</a>
+				<a href="checkmain.jsp">점검준비</a>
 				<ul class="depth03 active">
 					<li><a href="" style="background-color: #bfced9;">점검계획</a></li>
-					<li><a href="">점검항목(배점)</a></li>
+					<li><a href="checkScore.jsp">점검항목(배점)</a></li>
 					<li><a href="">위원권한 관리</a></li>
 				</ul>
 			</li>
 			<li>
-				<a href="">점검진행</a>
-				<ul class="depth03">
+				<a href="checkprocessmain.jsp">점검진행</a>
+				<ul class="depth03 ">
 					<li><a href="">운영계획서 초안</a></li>
 					<li><a href="">점검의견서 초안</a></li>
 					<li><a href="">기관운영계획서</a></li>
@@ -51,7 +51,7 @@ function getCurrentURL() {
 			</li>
 			<li>
 				<a href="">점검결과</a>
-				<ul class="depth03">
+				<ul class="depth03 ">
 					<li><a href="">최종검토서</a></li>
 					<li><a href="">운영계획 발표</a></li>
 				</ul>

@@ -8,8 +8,8 @@
 	transform:translate(-50%,-25%);/*  padding:20px; */
 	}
 #basicCheck .paddingBox{padding:20px;}	
-#basicCheck:before{
-	content:'확인';display: block; width:100%; background-color:#0a2742; color:#fff;
+#basicCheck.baseInfo:before{
+	content:'기본정보 입력';display: block; width:100%; background-color:#0a2742; color:#fff;
 	text-align:center; padding:1rem 0; margin-bottom:20px;
 	}
 	
@@ -17,15 +17,61 @@
 
 .fixDay,.choiceD{font-size:12px;}
 .choiceD{margin:0 1rem;}
-
-/**//* 
-.table2 tr:nth-child(2) td */
-.table2 tr:nth-child(2){grid-template-columns:1fr 3fr 1fr 6fr; }
-.table2 tr:nth-child(3){grid-template-columns:1fr 10fr; }
+/**/
+.scheduleList .table2.basicCheck tr{grid-template-columns: 1fr 3fr 1fr 3fr 1fr 2fr !important;}
+.scheduleList .table2.basicCheck tr td:nth-child(2n){text-align: left; padding-left:1rem;}
+.scheduleList .table2.basicCheck tr:nth-child(2){grid-template-columns: 1fr 3fr 1fr 6fr !important;}
+.scheduleList .table2.basicCheck tr:nth-child(3){grid-template-columns: 1fr 10fr !important;}
 
 /**/
+#basicCheck .table2.basicCheck tr{grid-template-columns: 1fr 3fr 1fr 3fr 1fr 2fr !important;}
+#basicCheck .table2.basicCheck tr:nth-child(2){grid-template-columns: 1fr 3fr 1fr 6fr !important;}
+#basicCheck .table2.basicCheck tr:nth-child(3){grid-template-columns: 1fr 10fr !important;}
+#basicCheck .table2.basicCheck tr td:nth-child(2n){text-align: left; padding-left:1rem;}
+/**/
 .titleStyleSub{ padding:0; position:relative;}
+ h6.titleStyleSub{font-size:16px; font-weight:normal; margin:1rem 0;}
 .titleStyleSub .modifyBtn{position: absolute; right:0; top:-5px; padding:0.5rem 2rem;}
 
 /**/
 #groupCheck .table5 tr td:nth-child(2){text-align: left; padding-left:2rem;}
+
+
+/* #basicCheck table.promo thead,
+#basicCheck table.promo tbody{display: grid; grid-template-columns:1fr 1fr 1fr 1fr;} */
+
+
+
+/************************************************************************************/
+/*step1 추진일정 화면 스타일*/
+table.step1 thead tr,
+table.step1 tbody tr {grid-template-columns:5% 40% 40% 15% !important;}
+table.step1 tbody tr td:nth-child(2) input{width:100%;}
+table.step1 tbody tr td:nth-child(3){
+	text-align:left; padding-left:1rem; padding-right:1rem;
+	display: grid; grid-template-columns:1fr 0fr 1fr; grid-gap:20px;
+	}
+table.step1 tbody tr td:nth-child(4){
+	text-align:left; padding-left:1rem; padding-right:1rem;
+	}
+table.step1 tbody tr input {border-bottom:1px solid #efefef; padding:0; width:100%;}
+table.step1 tbody tr input:focus {border-bottom:0;}
+
+/*버튼 스타일*/
+.btnTop{display: grid; grid-template-columns:1fr 1fr; width:200px; grid-gap:20px; position:absolute; top:30px; right:20px;}
+.btnTop .btn{padding:0;}
+.btnTop input{width:100%;  vertical-align: middle; padding:.5rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

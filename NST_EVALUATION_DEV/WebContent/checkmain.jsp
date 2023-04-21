@@ -13,22 +13,21 @@
 			<div class="scheduleList">
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">점검계획수립</h2>
-				<!-- 점검계획 기본정보 입력 -->
+				<!-- 점검계획 기본정보 입력 start-->
 				<div  class="addCheck">계획수립 작성</div>
-				<div id="basicCheck">
+				<div id="basicCheck" class="baseInfo">
 					<div class="paddingBox">
 						<span class="titleImg"></span>
 						<h2 class="titleStyle">기본정보</h2>
-						<!-- <div class="popClose">닫기</div> -->
 						<form>
-							<table class="table2">
+							<table class="table2 basicCheck">
 								<tbody>
 									<tr>
-										<td colspan="1">점검명</td>
-										<td colspan="2">
+										<td>점검명</td>
+										<td  >
 											<input class="text1" type="text" placeholder="점검명을 입력하세요.">
 										</td>
-										<td colspan="1">기관명</td>
+										<td>기관명</td>
 										<td>
 											<select name="groupId">
 												<option value="">::선택하세요::</option>
@@ -59,16 +58,16 @@
 												<option value="">한국핵융합에너지연구원</option>
 											</select>
 										</td>
-										<td colspan="1">기관장명</td>
+										<td>기관장명</td>
 										<td>홍길동</td>
 									</tr>
 									<tr>
-										<td colspan="1">수립일자</td>
+										<td>수립일자</td>
 										<td>									
 											<input class="fixDay" type="date" id="start" value="2023-04-14">
 										</td>
-										<td colspan="1">임기</td>
-										<td colspan="4">
+										<td>임기</td>
+										<td >
 											<input class="choiceD" type="date" id="start" value="2023-04-14">
 											~
 											<input class="choiceD" type="date" id="start" value="2023-04-14">
@@ -77,7 +76,7 @@
 									</tr>
 									<tr>
 										<td>첨부파일</td>
-										<td colspan="6">첨부하기</td>
+										<td>첨부하기</td>
 									</tr>
 								</tbody>
 							</table>
@@ -88,7 +87,10 @@
 						<div class="recall btn">취소</div>
 					</div>
 				</div>
+				<!-- 점검계획 기본정보 입력 end -->
 				<script type="text/javascript">
+					/*계획수립 작성 팝업*/
+					
 					function basicPopup(){
 						
 						var $target = $('.addCheck'),
@@ -118,6 +120,8 @@
 						})
 					}
 					basicPopup();
+					
+					
 				</script>
 				
 				<!-- 점검계획 기본정보 입력 후 리스트 생성 -->
@@ -136,7 +140,7 @@
 							<tr>
 								<td>08</td>
 								<td><img class="logoIn" src="source/img/common/agency_logo8.png"><a href="checkDetail.jsp">한국생산기술연구원</a></td>
-								<td><a href="#">작성중</a></td>
+								<td><a href="checkDetail_step1.jsp" class="before">미작성</a></td>
 								<td><a href="#">미작성</a></td>
 								<td></td>
 							</tr>
@@ -191,7 +195,126 @@
 							</tr>
 						</tbody>
 					</table>
+				</div><!-- groupCheck -->
+				<!-- 테이블 행 추가 삭제 스크립트 -->
+				<script type="text/javascript">
+					/* function addtr(promo){
+						let body = document.getElementById(promo);
+						let ftr = body.firstElementChild;
+						let trclone = ftr.cloneNode(true);
+						let trclone2 = ftr.cloneNode(false);
+						
+						body.append(trclone);
+						
+					};
+					
+					function clean_ftr(firstTr){
+						var children = firstTr.children,
+							last = children.length(10);
+						
+						body.append(trclone2);
+							
+						console.log(children);
+						};*/
+						
+						/*체크박스 선택 스크립트*/
+						
+						function selectAll(selectAll){
+								const checkboxes = document.getElementsByName('listInfo');
+								
+								checkboxes.forEach((checkbox) => {
+									checkbox.checked = selectAll.checked;
+								})
+							};
+						
+					
+					/* function clean_ftr(firstTr){
+						let children = firstTr.children;
+						
+						children = Array.isArr(children) ? children : Object.values(children);
+						children.forEach(i=>{
+							if(i !== firstTr.lastElementChild()){
+																	
+								i.firstElementChild.value = '';
+							}
+						});
+					} */
+					
+					
+	/* 				function addtr(promo){
+						var body = document.getElementById(promo);
+						var ftr = body.firstElementChild;
+						
+						var trclone = ftr.cloneNode(true);
+						
+						body.append(trclone);
+						clean_ftr(body.firstElementChild);
+					}
+					
+					function clean_ftr(firsrTr){
+						let children = firstTr.children;
+						
+						children = Array.isAttay(children) ? children : Object.values(children);
+						children.forEach(i=>{
+							if(i !== firsrTr.lastElementChild){
+								i.firstElementChild.value = '';
+							}
+						});
+					} */
+				</script>
+				<script type="text/javascript">
+					/*추진일정 미작성 팝업*/
+					/* 
+					function schedulePopup(){
+						
+					var $box2 = $(document).find('.beforeBox');
+						$box2.hide();
+						 var $target = $('.before'),
+							$target2 = $('.recall'),
+							popUp = 'popUp';
+						
+					}
+					schedulePopup(); */
+				</script>
+				<div id="basicCheck" class="beforeBox" style="display:none;">
+					<div class="paddingBox">
+						<span class="titleImg"></span>
+						<h2 class="titleStyle">추진일정</h2>
+						<div class="btnTop">
+							<div class="btn addBtn" onclick="addtr('promo')">추가</div>
+							<div class="btn delBtn">삭제</div>
+						</div>
+						<form>
+							<table class="table4">
+								<thead>
+									<tr>
+										<th><input type="checkbox" onclick='selectAll(this)'></th>
+										<th>점검단계</th>
+										<th>일정</th>
+										<th>비고</th>
+									</tr>
+								</thead>
+								<tbody id="promo">
+									<tr>
+										<td><input type="checkbox" name="listInfo"></td>
+										<td><input type="text" value="1. 22년 점검계획확정"></td>
+										<td>
+											<input type="date" class="startD">
+											~
+											<input type="date" class="endD">
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+					<div class="btnBox">
+						<div class="signUp btn">등록</div>
+						<div class="recall btn">취소</div>
+					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div><!-- inner -->

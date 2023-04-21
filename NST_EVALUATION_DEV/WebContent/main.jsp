@@ -80,7 +80,7 @@ $(function(document) {
 										<td>2xxx.xx.xx</td>
 										<td>아무거나 작성</td>
 										<td>2xxx.xx.xx</td>
-										<td><img src="./source/img/iconState03.png"></td>
+										<td><img src="./source/img/iconState01.png"></td>
 									</tr>
 								</tbody>
 							</table>

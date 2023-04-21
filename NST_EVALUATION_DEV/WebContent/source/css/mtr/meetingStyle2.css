@@ -28,7 +28,7 @@
 #basicCheck{
 	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
 	display: block; border: 1px solid #b7b7b7; width:80%;
-	transform:translate(-50%,-100%);/*  padding:20px; */
+	transform:translate(-50%,-50%);/*  padding:20px; */
 	}
 
 #basicCheck .paddingBox{padding:20px;}	
@@ -71,9 +71,4 @@
 .table2.meetingInfo .table7 tr td{background-color:#fff !important; color:#000 !important;}
 
 
-/*상세회의실 스타일 */
-.btnBox{grid-template-columns:1fr 1fr 1fr!important; width:300px!important;}
-
-.table2.reasonBox tr{grid-template-columns:1fr 10fr !important;background-color:#0a2742;}/* 
-.table2.reasonBox tr td:nth-child(1){} */
-.table2.reasonBox td{padding:0; vertical-align: middle;align-self: center;} 
+ 

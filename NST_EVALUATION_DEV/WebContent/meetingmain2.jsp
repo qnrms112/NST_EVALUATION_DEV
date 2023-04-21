@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<link rel="stylesheet" type="text/css" href="source/css/mtr/meetingStyle.css">
+<link rel="stylesheet" type="text/css" href="source/css/mtr/meetingStyle2.css">
 <jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
 
 <div id="container">
@@ -35,7 +35,7 @@
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">2023 한국생산기술연구원 운영계획점검</h2>
 				<!-- 점검계획 기본정보 입력 -->
-				<!-- <div  class="addCheck">회의실 개설</div>
+				<div  class="addCheck">회의실 개설</div>
 				<div id="basicCheck">
 					<div class="paddingBox">
 						<span class="titleImg"></span>
@@ -112,7 +112,7 @@
 						<div class="signUp btn">등록</div>
 						<div class="recall btn">취소</div>
 					</div>
-				</div> -->
+				</div>
 				<script type="text/javascript">
 					function basicPopup(){
 						

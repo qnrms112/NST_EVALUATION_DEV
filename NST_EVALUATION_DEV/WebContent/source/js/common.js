@@ -18,14 +18,16 @@ $(function(document) {
 	
 	
 	/*header slide 메뉴 hover시 작동*/
-	$("nav > .depth01 li a, .menu_info_sub").hover(function(){
+	/*$("nav > .depth01 li a, .menu_info_sub").hover(function(){
 		//mouseover
 		$('.menu_info_sub').addClass("opener");
 		
 	},function(){
 		//mouseout
 		$('.menu_info_sub').removeClass("opener");
-	});
+	});*/
+	
+	
 	
 	
 	/*메인 화면의 (오늘의 할일, 새게시글) 탭구성 */

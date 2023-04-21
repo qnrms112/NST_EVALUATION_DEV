@@ -68,23 +68,23 @@ $(function(document) {
 								<tbody>
 									<tr>
 										<td  >회의명</td>
-										<td colspan="6"><input type="text"></td>
+										<td><input type="text"></td>
 									</tr>
 									<tr>
 										<td  >회의시작일시</td>										
-										<td colspan="3"><input type="date"></td>										
+										<td><input type="date"></td>										
 										<td  >응답기한</td>										
-										<td colspan="2"><input type="date"></td>										
+										<td  ><input type="date"></td>										
 									</tr>
 									<tr>
 										<td  >담당자</td>
-										<td colspan="3"><input type="text"></td>
+										<td  ><input type="text"></td>
 										<td  >연락처</td>
-										<td colspan="2"><input type="text"></td>
+										<td  ><input type="text"></td>
 									</tr>
 									<tr>
 										<td>참석자</td>
-										<td>
+										<td class="visitBox">
 											<table class="table7">
 												<thead>
 													<tr>
@@ -158,7 +158,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>요청일자</th>
+									<th>회의자료실</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>
@@ -190,7 +190,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>아니야</th>
+									<th>회의실관리</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>
@@ -222,7 +222,7 @@ $(function(document) {
 						<table>
 							<thead>
 								<tr>
-									<th>미친거</th>
+									<th>회의록</th>
 									<th>내용</th>
 									<th>마감기한</th>
 									<th>상태</th>
@@ -249,8 +249,68 @@ $(function(document) {
 								</tr>
 							</tbody>
 						</table>
+					</div>
+				</div><!-- tabContetn -->
+				
+				<!-- 버튼 -->
+				<div class="btnBox">
+					<div class="btn">회의시작</div>
+					<div class="btn delRoom">회의취소</div>
+					<div class="btn">목록</div>
+				</div>
+				
+				<!-- 점검계획 기본정보 입력 -->
+				<div id="basicCheck">
+					<div class="paddingBox">
+						<form>
+							<table class="table2 reasonBox">
+								<tbody>
+									<tr>
+										<td>취소사유</td>
+										<td><textarea>이건 누가봐도 텍스트</textarea></td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+					</div>
+					<div class="btnBox">
+						<div class="signUp btn">확인</div>
+						<div class="recall btn">취소</div>
 					</div>
 				</div>
+				<script type="text/javascript">
+					function basicPopup(){
+						
+						var $target = $('.delRoom'),
+							$target2 = $('.recall'),
+							$parent = $target.parent(),
+							$box = $parent.next(),
+							
+							popUp = 'popUp';
+						
+							$box.hide();
+							$box.eq().show();
+							
+						//버튼 클릭
+						$target.on('click',function(){
+							var $this = $(this),
+								$myBox = $this.parent().find('.popUp');
+							
+							$box.addClass(popUp).show();
+							/* $myBox.removeClass(popUp).hide(); */
+							
+						})
+						
+						$target2.on('click', function(){
+							var $this = $(this),
+								$find = $this.parent().parent('.popUp');
+							
+							$find.removeClass(popUp).hide();
+						})
+					}
+					basicPopup();
+				</script>
+				
 			</div>
 		</div>
 	</div><!-- inner -->
