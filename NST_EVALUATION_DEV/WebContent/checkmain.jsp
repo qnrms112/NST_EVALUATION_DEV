@@ -141,7 +141,7 @@
 								<td>08</td>
 								<td><img class="logoIn" src="source/img/common/agency_logo8.png"><a href="checkDetail.jsp">한국생산기술연구원</a></td>
 								<td><a href="checkDetail_step1.jsp" class="before">미작성</a></td>
-								<td><a href="#">미작성</a></td>
+								<td><a href="checkDetail_step2.jsp">미작성</a></td>
 								<td></td>
 							</tr>
 							<tr>
