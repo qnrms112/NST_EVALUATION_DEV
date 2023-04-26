@@ -191,7 +191,6 @@
 								<td>2023.xx.xx</td>
 								<td>2023.xx.xx</td>
 								<td>제출</td>
-								
 							</tr>
 							<tr>
 								<td>01</td>

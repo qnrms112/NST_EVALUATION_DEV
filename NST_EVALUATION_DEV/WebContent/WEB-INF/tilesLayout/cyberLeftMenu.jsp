@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<link rel="stylesheet" type="text/css" href="././source/css/common/leftStyle.css">
-<link rel="stylesheet" type="text/css" href="././source/css/common/subCommon.css">
+<link rel="stylesheet" type="text/css" href="././source/css/common/cyberLeftStyle.css">
+<link rel="stylesheet" type="text/css" href="././source/css/common/cyberSubCommon.css">
 <!-- <script type="text/javascript" src="././source/css/common/subCommon.css"></script> -->
 
 <script type="text/javascript">

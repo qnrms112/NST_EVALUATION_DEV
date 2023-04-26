@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
+<jsp:include page="WEB-INF/tilesLayout/cyberHeader.jsp" flush="true"></jsp:include>
 <script type="text/javascript">
 $(function(document) {
 
@@ -142,70 +142,6 @@ $(function(document) {
 					<span class="titleImg"></span>
 					<h2 class="titleStyle">주요일정</h2>
 					<div id="groupBox">
-						<div id="groupName">
-							<ul>
-								<li>기관명</li>
-								<li><a href="cyberMain.jsp" target="_blank">한국과학기술연구원</a></li>
-								<li>점검명</li>
-								<li>2023 한국과학기술연구원 운영계획점검</li>
-							</ul>
-						</div>
-						<table class="table3 schedule">
-							<thead>
-								<tr>
-									<th>점검단계</th>
-									<th>일정</th>
-									<th>상태</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>1. 22년 점검계획 확정</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>2. 점검단구성</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>3.출연(연) 기관운영계획서 접수</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>4. 점검단 사전설명회</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>5.점검의견서 초안</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>6. 현장점검</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-								<tr>
-									<td>7. 자체점검결과 작성</td>
-									<td colspan="2">2022.01.25 ~ 2022.01.25</td>
-									<td>완료</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div id="groupBox">
-						<div id="groupName">
-							<ul>
-								<li>기관명</li>
-								<li><a href="cyberMain.jsp" target="_blank">한국과학기술연구회</a></li>
-								<li>점검명</li>
-								<li>2023 한국과학기술연구회 운영계획점검</li>
-							</ul>
-						</div>
 						<table class="table3 schedule">
 							<thead>
 								<tr>

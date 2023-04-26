@@ -145,7 +145,7 @@
 					</section>
 					<div class="btnBox">
 						<div class="btn asign" onClick="location.href='checkmain.jsp'">등록</div>
-						<div class="btn recall">취소</div>
+						<div class="btn recall" onClick="location.href='checkmain.jsp'">취소</div>
 					</div>
 				</div>		
 			</div>
