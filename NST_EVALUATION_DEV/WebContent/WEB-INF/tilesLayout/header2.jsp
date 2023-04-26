@@ -29,7 +29,7 @@
 	</script> -->
 	<div class="colorBox">
 		<div class="login_info">
-			<p class="inner"><i>홍길동</i>님 안녕하세요</p>
+			<p class="inner"><i>홍길동</i>이거사용안함</p>
 		</div>
 		<div class="inner menu_info">
 			<h1 class="" onClick="location.href='./index.jsp'"></h1>

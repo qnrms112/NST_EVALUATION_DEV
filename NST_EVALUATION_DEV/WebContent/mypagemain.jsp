@@ -58,7 +58,7 @@
 					</table>
 				</div><!-- infoBox -->
 
-				<span class="titleImg"></span>
+				<!-- <span class="titleImg"></span>
 				<h2 class="titleStyle">위원상태</h2>
 				<div id="myState">
 					<table class="table2">
@@ -72,6 +72,34 @@
 							<td>임기</td>
 							<td colspan='3'>20xx-xx-xx ~ 20xx-xx-xx</td>
 						</tr>
+					</table>
+				</div> -->
+				<span class="titleImg"></span>
+				<h2 class="titleStyle">활동내역</h2>
+				<div id="mydo">
+					<table class="table4">
+						<thead>
+							<tr>
+								<th>기관</th>
+								<th>점검명</th>
+								<th>기간</th>
+								<th>직급</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>한국과학기술연구회</td>
+								<td>2023 한국과학기술연구회 기관운영계획 점검</td>
+								<td>2023.xx.xx ~ 2023.xx.xx</td>
+								<td>위원</td>
+							</tr>
+							<tr>
+								<td>한국과학기술연구회</td>
+								<td>2022 한국과학기술연구회 기관운영평가</td>
+								<td>2022.xx.xx ~ 2022.xx.xx</td>
+								<td>간사</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
 			</div>
