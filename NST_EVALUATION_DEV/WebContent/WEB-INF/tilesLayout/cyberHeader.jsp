@@ -30,7 +30,7 @@
 		<div class="login_info">
 			<p class="inner cyberInfo">
 				<strong>한국과학기술연구회 - 2023 한국과학기술연구회 기관운영계획 점검</strong>
-				<span>[간사]<i>홍길동</i></span>
+				<span><i>홍길동</i>[간사]</span>
 			</p>
 		</div>
 		<div class="inner menu_info">
@@ -39,8 +39,7 @@
 				<ul class="depth01">
 					<li><a href="cyberCheckmain.jsp">운영계획점검</a></li>
 					<!-- <li><a href="#">기관운영평가</a></li> -->
-					<li><a href="meetingmain_table.jsp">회의실</a></li>
-					<li><a href="mypagemain.jsp">마이페이지</a></li>
+					<li><a href="cyberMeetingmain.jsp" target="_blank">회의실</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -64,11 +63,7 @@
 						<li><a href="">점검회의</a></li>
 						<li><a href="">평가회의</a></li>
 					</ul>
-					<ul class="depth02">
-						<li><a href="">내정보</a></li>
-						<li><a href="">전자알림</a></li>
-						<li><a href="mypagePay1.jsp">수당신청</a></li>
-					</ul>
+					
 				</div>
 			</div>
 		</div>

@@ -36,7 +36,7 @@
 				<ul class="depth01">
 					<li><a href="checkmain.jsp">운영계획점검</a></li>
 					<li><a href="#">기관운영평가</a></li>
-					<li><a href="meetingmain_table.jsp">회의실</a></li>
+					<li><a href="meetingmain_table.jsp" target="_blank">회의실</a></li>
 					<li><a href="mypagemain.jsp">마이페이지</a></li>
 				</ul>
 			</nav>
