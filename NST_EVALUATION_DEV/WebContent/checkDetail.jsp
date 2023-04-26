@@ -38,7 +38,7 @@
 				</table>
 				<table class="table3">
 					<h6 class="titleStyleSub">추진일정
-						<div class="btn modifyBtn">수정</div>
+						<div class="btn modifyBtn" onClick="location.href='checkDetail_step1.jsp'">수정</div>
 					</h6>
 					<thead>
 						<tr>
@@ -67,7 +67,7 @@
 				</table>
 				<table class="table4">
 					<h6 class="titleStyleSub">점검단구성
-						<div class="btn modifyBtn">수정</div>
+						<div class="btn modifyBtn" onClick="location.href='checkDetail_step2.jsp'">수정</div>
 					</h6>
 <!-- 					<div class="titleStyleSub">점검단구성
 						<div class="btn modifyBtn">수정</div>

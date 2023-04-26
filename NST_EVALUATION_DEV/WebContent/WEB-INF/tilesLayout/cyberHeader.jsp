@@ -9,7 +9,7 @@
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./source/js/common.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="./source/css/common/common.css">
+	<link rel="stylesheet" type="text/css" href="./source/css/common/cyberCommon.css">
 	<link rel="stylesheet" type="text/css" href="./source/css/common/fontCommon.css">
 	<link rel="stylesheet" type="text/css" href="./source/css/main/mainStyle.css">
 
@@ -28,14 +28,17 @@
 	</script>
 	<div class="colorBox">
 		<div class="login_info">
-			<p class="inner"><i>홍길동</i>님 안녕하세요</p>
+			<p class="inner cyberInfo">
+				<strong>한국과학기술연구회 - 2023 한국과학기술연구회 기관운영계획 점검</strong>
+				<span>[간사]<i>홍길동</i></span>
+			</p>
 		</div>
 		<div class="inner menu_info">
-			<h1 class="" onClick="location.href='main.jsp'"></h1>
+			<h1 class="" onClick="location.href='main.jsp'"><p>[사이버 평가장]</p></h1>
 			<nav>
 				<ul class="depth01">
-					<li><a href="checkmain.jsp">운영계획점검</a></li>
-					<li><a href="#">기관운영평가</a></li>
+					<li><a href="cyberCheckmain.jsp">운영계획점검</a></li>
+					<!-- <li><a href="#">기관운영평가</a></li> -->
 					<li><a href="meetingmain_table.jsp">회의실</a></li>
 					<li><a href="mypagemain.jsp">마이페이지</a></li>
 				</ul>
@@ -48,15 +51,15 @@
 				<div class="menuTitle"></div>
 				<div class="openMenu">
 					<ul class="depth02">
-						<li><a href="checkmain.jsp">점검준비</a></li>
+						<li><a href="cyberCheckmain.jsp">점검준비</a></li>
 						<li><a href="checkprocessmain.jsp">점검진행</a></li>
 						<li><a href="">점검결과</a></li>
 					</ul>
-					<ul class="depth02">
+					<!-- <ul class="depth02">
 						<li><a href="">평가준비</a></li>
 						<li><a href="">평가진행</a></li>
 						<li><a href="">평가결과</a></li>
-					</ul>
+					</ul> -->
 					<ul class="depth02">
 						<li><a href="">점검회의</a></li>
 						<li><a href="">평가회의</a></li>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<link rel="stylesheet" type="text/css" href="source/css/mtr/meetingStyle_table2.css">
+<link rel="stylesheet" type="text/css" href="source/css/myp/mypagePay1.css">
 <jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
 
 <div id="container">
@@ -20,8 +20,17 @@
 						<tr>
 							<td>
 								<select>
+									<option>구분</option>
+									<option>회의참석수당</option>
+									<option>교통비</option>
+									<option>기타</option>
+								</select>
+							</td>
+							<td>
+								<select>
 									<option>전체</option>
 									<option>회의명</option>
+									<option>내용</option>
 									<option>상태</option>
 								</select>
 							</td>
@@ -33,13 +42,13 @@
 				</div>
 				
 				<span class="titleImg"></span>
-				<h2 class="titleStyle">회의실</h2>
+				<h2 class="titleStyle">수당신청 내역</h2>
 				<!-- 점검계획 기본정보 입력 -->
-				<div  class="addCheck">회의실 개설</div>
+				<div  class="addCheck">수당신청</div>
 				<div id="basicCheck">
 					<div class="paddingBox">
 						<span class="titleImg"></span>
-						<h2 class="titleStyle">기본정보</h2>
+						<h2 class="titleStyle">수당신청 화면</h2>
 						<!-- <div class="popClose">닫기</div> -->
 						<script type="text/javascript">
 							function selectAll(selectAll){
@@ -54,27 +63,37 @@
 							<table class="table2 meetingInfo">
 								<tbody>
 									<tr>
-										<td>기관명</td>
+										<td>구분</td>
 										<td><select><option>한국생산기술연구원</option></select></td>
-										<td>점검명</td>
+										<td>구분내용</td>
 										<td><input type="text" value="2023 한국생산기술연구원 운영계획점검"></td>
 									</tr>
 									<tr>
-										<td>기간</td>										
+										<td>수당 신청자</td>										
 										<td><input type="date">~<input type="date"></td>										
-										<td class="label1">응답기한</td>										
+										<td class="label1">주민등록번호</td>										
 										<td><input type="date"></td>										
 									</tr>
+									<tr>
+										<td>계좌정보</td>										
+										<td>대전은행</td>										
+										<td class="label1">예금주 명</td>										
+										<td>홍길동</td>										
+									</tr>
 									<tr style="display:grid; grid-template-columns:1fr 5fr !important;">
-										<td>비고</td>
+										<td>주소</td>
 										<td><input type="text" value="점검에 대한 간단한 설명"></td>
+									</tr>
+									<tr style="display:grid; grid-template-columns:1fr 5fr !important;">
+										<td>수당 지급 동의</td>
+										<td>동의<input type="checkbox" ><a href=""> [수당영수증 보기]</a></td>
 									</tr>
 								</tbody>
 							</table>
 						</form>
 					</div>
 					<div class="btnBox">
-						<div class="signUp btn">개설</div>
+						<div class="signUp btn">신청</div>
 						<div class="recall btn">취소</div>
 					</div>
 				</div>
@@ -115,69 +134,34 @@
 					<table class="table5">
 						<thead>
 							<tr>
+								<th>번호</th>
 								<th>구분</th>
-								<th>기관명</th>
-								<th>점검명</th>
-								<th>기간</th>
-								<th>비고</th>
+								<th>구분 내용</th>
+								<th>요청일자</th>
+								<th>상태</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>08</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo8.png"><a href="meetingmain.jsp">한국생산기술연구원</a></td>
-								<td><a href="">2023 한국생산기술연구원 운영계획점검</a></td>
-								<td><a href="">2023.xx.xx~2023.xx.xx</a></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>07</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo7.png">한국한의학연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>06</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo6.png">한국과학기술정보연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>05</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo5.png">한국생명공학연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
-							</tr>
-							<tr>
-								<td>04</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo4.png">한국천문연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
-							</tr>
-							<tr>
 								<td>03</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo3.png">한국기초과학지원연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
+								<td>회의참석수당</td>
+								<td><a href="mypagePayDetail.jsp">한국생명공학연구원 사전설명회의</a></td>
+								<td>20xx.xx.xx</td>
+								<td>대기중</td>
 							</tr>
 							<tr>
 								<td>02</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo2.png">(부설)국가녹색기술연구소</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
+								<td>회의참석수당</td>
+								<td>한국생명공학연구원 사전설명회의</td>
+								<td>20xx.xx.xx</td>
+								<td>대기중</td>
 							</tr>
 							<tr>
 								<td>01</td>
-								<td><img class="logoIn" src="source/img/common/agency_logo1.png">한국과학기술연구원</td>
-								<td>작성중</td>
-								<td>미작성</td>
-								<td></td>
+								<td>회의참석수당</td>
+								<td>한국생명공학연구원 사전설명회의</td>
+								<td>20xx.xx.xx</td>
+								<td>대기중</td>
 							</tr>
 						</tbody>
 					</table>

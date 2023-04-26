@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+#infoBox{display: grid; grid-template-columns:1fr 5fr; grid-gap:10px; margin-bottom:20px;}
+#infoBox #myImg{display: block; width:100%; background-color:#eee;} 
+
+.checkInfo tr:nth-child(2),
+.checkInfo tr:nth-child(4),
+.checkInfo tr:nth-child(7){grid-template-columns:1fr 5fr !important;}
+
+.checkInfo tr td:nth-child(2n),
+#myState tr td:nth-child(2n){text-align: left; padding-left:2rem;}
+
+
+
+/* .checkInfo tr:nth-child(2) td:nth-child(2),
+.checkInfo tr:nth-child(4) td:nth-child(2),
+.checkInfo tr:nth-child(7) td:nth-child(2){text-align: left; padding-left:2rem;} */
+
+
+
+/*목록검색 스타일 div > table = input*/
+.searchForm{margin-bottom:20px; display: grid; grid-template-columns:3fr .5fr;}
+.searchForm table tr{display:grid; grid-template-columns:1fr  1fr 4fr;}
+.searchForm table tr td select,.searchForm > input{background-color:#0a2742; color:#fff;}
+.searchForm table tr td option{background-color: #fff; color:#000;}
+.searchForm td{padding:0;}
+.searchForm td input,.searchForm td select{width:100%; padding:0.5rem 1rem !important;}
+.scheduleList div.addCheck{top: 130px !important;}
+
+/*수당신청 팝업*/
+#basicCheck{
+	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
+	display: block; border: 1px solid #b7b7b7; width:80%;
+	transform:translate(-50%,-25%);/*  padding:20px; */
+	}
+#basicCheck .paddingBox{padding:20px;}	
+#basicCheck:before{
+	content:'확인';display: block; width:100%; background-color:#0a2742; color:#fff;
+	text-align:center; padding:1rem 0; margin-bottom:20px;
+	}

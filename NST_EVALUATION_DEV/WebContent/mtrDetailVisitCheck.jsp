@@ -223,93 +223,82 @@ $(function(document) {
 							<thead>
 								<tr>
 									<th>회의록</th>
-									<th>내용</th>
-									<th>마감기한</th>
-									<th>상태</th>
 								</tr>
 							</thead>
 							<tbody>
+								<!-- <tr>
+									<td>다운로드</td>
+								</tr> -->
 								<tr>
-									<td>2xxx.xx.xx</td>
-									<td>아무거나 작성</td>
-									<td>2xxx.xx.xx</td>
-									<td><img src="./source/img/iconState04.png"></td>
-								</tr>
-								<tr>
-									<td>2xxx.xx.xx</td>
-									<td>아무거나 작성아무거나 작성아무거나 작성아무거나 작성아무거나 작성아무거나 작성아무거나 작성아무거나 작성아무거나 작성</td>
-									<td>2xxx.xx.xx</td>
-									<td><img src="./source/img/iconState04.png"></td>
-								</tr>
-								<tr>
-									<td>2xxx.xx.xx</td>
-									<td>아무거나 작성</td>
-										<td>2xxx.xx.xx</td>
-									<td><img src="./source/img/iconState04.png"></td>
+									<td>
+										<input class="btn fileUp" type="button" value="다운로드" style="margin:0 auto;">
+										<div id="basicCheck">
+						<div class="paddingBox">
+							<form>
+								<table class="table2 reasonBox">
+									<tbody>
+										<tr>
+											<td>회의록</td>
+											<td>첨부파일(회의록)</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+						</div>
+						<div class="btnBox">
+							<div class="signUp btn">회의참석 체크</div>
+							<div class="recall btn">목록</div>
+						</div>
+					</div>
+										</td>
+									<!-- 회의 취소 팝업 -->
+					
 								</tr>
 							</tbody>
 						</table>
 					</div>
+					
+					
+					<script type="text/javascript">
+						function basicPopup(){
+							
+							var $target = $('.fileUp'),
+								$target2 = $('.recall'),
+								/* $parent = $target.parent().parent(), */
+								$box = $target.next(),
+								
+								popUp = 'popUp';
+							
+								$box.hide();
+								$box.eq().show();
+								
+							//버튼 클릭
+							$target.on('click',function(){
+								var $this = $(this),
+									$myBox = $this.parent().find('.popUp');
+								
+								$box.addClass(popUp).show();
+								/* $myBox.removeClass(popUp).hide(); */
+								
+							})
+							
+							$target2.on('click', function(){
+								var $this = $(this),
+									$find = $this.parent().parent('.popUp');
+								
+								$find.removeClass(popUp).hide();
+							})
+						}
+						basicPopup();
+					</script>
+					
 				</div><!-- tabContetn -->
 				
 				<!-- 버튼 -->
-				<div class="btnBox">
-					<div class="btn"><a href="mtrDetailE.jsp">회의시작</a></div>
-					<div class="btn delRoom">회의취소</div>
+				<div class="btnBox3">
+					<div class="btn">회의참석체크</div>
 					<div class="btn">목록</div>
 				</div>
-				
-				<!-- 회의 취소 팝업 -->
-				<div id="basicCheck">
-					<div class="paddingBox">
-						<form>
-							<table class="table2 reasonBox">
-								<tbody>
-									<tr>
-										<td>취소사유</td>
-										<td><textarea>이건 누가봐도 텍스트</textarea></td>
-									</tr>
-								</tbody>
-							</table>
-						</form>
-					</div>
-					<div class="btnBox">
-						<div class="signUp btn">확인</div>
-						<div class="recall btn">취소</div>
-					</div>
-				</div>
-				<script type="text/javascript">
-					function basicPopup(){
-						
-						var $target = $('.delRoom'),
-							$target2 = $('.recall'),
-							$parent = $target.parent(),
-							$box = $parent.next(),
-							
-							popUp = 'popUp';
-						
-							$box.hide();
-							$box.eq().show();
-							
-						//버튼 클릭
-						$target.on('click',function(){
-							var $this = $(this),
-								$myBox = $this.parent().find('.popUp');
-							
-							$box.addClass(popUp).show();
-							/* $myBox.removeClass(popUp).hide(); */
-							
-						})
-						
-						$target2.on('click', function(){
-							var $this = $(this),
-								$find = $this.parent().parent('.popUp');
-							
-							$find.removeClass(popUp).hide();
-						})
-					}
-					basicPopup();
-				</script>
 				
 			</div>
 		</div>

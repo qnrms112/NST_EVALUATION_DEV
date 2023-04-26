@@ -37,11 +37,6 @@
 #groupCheck .table5 tr td:nth-child(2){text-align: left; padding-left:2rem;}
 
 
-/* #basicCheck table.promo thead,
-#basicCheck table.promo tbody{display: grid; grid-template-columns:1fr 1fr 1fr 1fr;} */
-
-
-
 /************************************************************************************/
 /*step1 추진일정 화면 스타일*/
 table.step1 thead tr,
@@ -63,13 +58,74 @@ table.step1 tbody tr input:focus {border-bottom:0;}
 .btnTop input{width:100%;  vertical-align: middle; padding:.5rem;}
 
 
+/************************************************************************************/
+/*step2 점검단등록 스타일*/
+/*전체 그리드*/
+.scheduleList section{
+	display: grid; grid-template-columns:3fr 0.5fr 3fr;/*  grid-gap:20px; */ padding:20px;
+	}
+
+/*소속 부서 조회*/
+.searchForm {display: grid; grid-template-columns:100%; margin-bottom:20px;}
+.searchForm .searchTable tbody{border:1px solid #efefef; }
+.searchForm .searchTable tr{
+	display: grid; grid-template-columns:25% 25% 50%; place-items: center;
+	/* border:1px solid #dfdfdf; */
+	}
+.searchForm .searchTable td:nth-child(3){border-right:0;}
+.searchForm .searchTable td{width:100%;border-bottom:0; border-left:0; border-right:1px solid #efefef;}
+.searchForm input{width:90%;}
+.searchForm td:nth-child(3){ position:relative;}
+.searchForm td:nth-child(3) div:after{
+	content:'';display: block; position:absolute; top:50%; right:10px;
+	width:22px; height:20px; transform: translateY(-50%);
+	background-image: url("/source/img/common/iconimg.png"); background-repeat: no-repeat; 
+	background-position:0 -153px; cursor: pointer;
+	}
+	
+.searchForm td select{width:90%; padding:0;}
+
+/*점검단 in out 버튼 스타일*/
+.inoutBox{
+	display: grid; grid-gap:10px;
+	place-items: center; place-content: center; grid-auto-columns: min-content;}
+.inoutBox .in{
+	display:block; width:18px; height:18px; padding:0.5rem; position: relative; border:1px solid #dfdfdf; cursor: pointer; 
+	}
+.inoutBox .in:after{
+	content:''; display: block; width:18px; height:18px;
+	background-image:url("/source/img/common/iconimg.png"); background-repeat:no-repeat;
+	background-position:-17px -173px;
+	position: absolute;top:50%; left:50%;
+	transform: translate(-50%, -50%);
+	}
+.inoutBox .out{
+	display: block; width:18px; height:18px; padding:0.5rem; position:relative; border:1px solid #dfdfdf; cursor: pointer;
+	}
+.inoutBox .out:after{
+	content:''; display: block; width:18px; height:18px; 
+	background-image:url("/source/img/common/iconimg.png"); background-repeat:no-repeat;
+	background-position:0 -172px;
+	position:absolute; top:50%; left:50%;
+	transform:translate(-50%, -50%);
+	}
+
+/*searchResult table 스타일*/
+.searchResult table th,.searchResult table td{border:0; text-overflow: ellipsis; overflow: hidden;}
+.searchResult table thead,.searchResult table tbody{border-top:1px solid #efefef; border-right:1px solid #efefef; border-left:1px solid #efefef;}
+.searchResult table thead,.searchResult table tbody{border:1px solid #efefef;}
 
 
-
-
-
-
-
+/*추가한 리스트 table 스타일*/
+.listCheck2{
+	display: grid;align-content: baseline;
+    place-items: self-end;}
+.listCheck2 .choDel{
+	padding:0.5rem 1rem;border:1px solid #efefef; margin-bottom:20px;
+	}
+.listCheck2 table{border:1px solid #efefef;}
+.listCheck2 thead,.listCheck2 th,.listCheck2 tbody,.listCheck2 td{border:0;}
+.listCheck2 thead{border-bottom:1px solid #efefef;}
 
 
 

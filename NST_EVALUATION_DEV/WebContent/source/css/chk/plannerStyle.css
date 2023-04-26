@@ -1,0 +1,67 @@
+@charset "UTF-8";
+.searchForm{margin-bottom:20px;}
+.searchForm tbody{border:0;}
+/* 
+/* .searchForm tbody {
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    } */
+.searchForm tbody tr{
+	display: grid;
+    grid-template-columns:2fr 2fr 5fr 2fr;/*  background-color:#0a2742;  */
+}
+.searchForm tbody tr{place-items: center; border:1px solid #efefef;}
+.searchForm tbody tr td{width:100%; border:0; border-left:1px solid #efefef;}
+.searchForm tbody tr td:first-child{border-left:0;}
+.searchForm tbody tr td > *{width:100%; height:30px;display: grid;
+    place-items: center;}
+.searchForm tbody tr td > .btn{display: grid; place-items:center;}
+.searchForm tbody tr td select ,.searchForm tbody tr td .btn{padding:0 !important}
+.searchForm tbody tr td:nth-child(2){/* display:grid; grid-template-columns:300px; */ background-color:#fff; color:#000;}
+.searchForm td{padding:0;}
+
+/*테이블 리스트 스타일*/
+#groupCheck{position:relative;}
+#groupCheck .request{
+	position:absolute; top:-45px; right:0;
+	padding: 10px 1rem;
+    cursor: pointer;
+	}
+#groupCheck thead th{background-color:#0a2742; color:#fff; font-weight: normal;}
+#groupCheck thead td{font-size:12px;}
+/* #groupCheck tbody td:nth-child(2){text-align: left;} */
+
+/* .searchForm tr td:first-child{display: grid;
+    grid-template-columns: 2fr 3fr;} */
+
+
+/*스타일 확인*/
+#basicCheck{
+	position:absolute; top:50%; left:50%; background-color:rgba(255,255,255,1); 
+	display: block; border: 1px solid #b7b7b7; width:50%;
+	transform:translate(-50%,-25%);/*  padding:20px; */
+	}
+#basicCheck .paddingBox{padding:20px;}	
+#basicCheck.baseInfo:before{
+	content:'기본정보 입력';display: block; width:100%; background-color:#0a2742; color:#fff;
+	text-align:center; padding:1rem 0; margin-bottom:20px;
+	}
+
+#basicCheck tr td:first-child{background-color:#0a2742; color:#fff;}
+#basicCheck tr:nth-child(3) td:last-child { text-align:left; padding-left:1.5rem;}
+#basicCheck tr td > *{width:90%;}
+#basicCheck .popClose{display: block; width:30px; height:30px; border:1px solid #000;}
+
+.fixDay,.choiceD{font-size:12px;}
+.choiceD{margin:0 1rem;}
+
+
+
+
+
+
+
+
+
+
+

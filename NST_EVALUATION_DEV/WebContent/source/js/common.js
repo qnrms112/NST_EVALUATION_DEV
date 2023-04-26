@@ -17,15 +17,15 @@ $(function(document) {
 		});*/
 	
 	
-	/*header slide 메뉴 hover시 작동*/
-	/*$("nav > .depth01 li a, .menu_info_sub").hover(function(){
+	//header slide 메뉴 hover시 작동
+	$("nav > .depth01 li a, .menu_info_sub").hover(function(){
 		//mouseover
 		$('.menu_info_sub').addClass("opener");
 		
 	},function(){
 		//mouseout
 		$('.menu_info_sub').removeClass("opener");
-	});*/
+	});
 	
 	
 	
@@ -54,45 +54,28 @@ $(function(document) {
 	mainTab();
 	
 	/*leftMenu 의 아코디언 메뉴 구성*/
-	/*$(".leftBox .depth02 > li").hover(function(){
+	/*function acoMenu(){
+		var $full = $('.depth01'),
+			$box = $full.find('.depth02'),
+			$list = $box.find('> li'),
+			$target = $list.find('ul'), 
+			
+			tcl = 'aco';
+			if($target = '.depth03-1'){
+				$target.parent().addClass(tcl);
+			}
+	}
+	acoMenu();*/
+	
+	//작동되는 코드
+	/*	$(".leftBox .depth02 > li").hover(function(){
 		//mouseover
 		$('.depth02 > li > .depth03').addClass("active");
 		
 	},function(){
 		//mouseout
 		$('.depth02 > li > .depth03').removeClass("active");
-	});*/
+	});
+    */	
 	
-	
-	/*function leftMenu(){
-		var $leftBox = $('.leftBox'),
-			$leftMenu = $leftBox.find('ul.depth02'),
-			$leftList = $leftMenu.find('> li'),
-			$leftCont = $leftList.find('.depth03'),
-			$leftDel = $leftMenu.find('.active');
-			
-		
-		$leftCont.hide();
-		$leftCont.eq().show();
-		
-		$leftList.on('click', function(e){
-			var $this = $(this),
-				$myCont = $this,
-				myIndex = $this.index();
-				e.preventDefault();
-			
-			$leftList.removeClass(active);
-			$myCont.addClass(active);
-			
-			$leftCont.hide();
-			$leftCont.eq(myIndex).show();
-			
-			
-		})
-		
-		
-		
-		
-	}
-	leftMenu();*/
 });

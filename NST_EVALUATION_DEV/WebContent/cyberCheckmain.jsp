@@ -2,12 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <link rel="stylesheet" type="text/css" href="source/css/chk/checkStyle.css">
-<jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
+<jsp:include page="WEB-INF/tilesLayout/cyberHeader.jsp" flush="true"></jsp:include>
 
 <div id="container">
 	<!-- test/s -->
 	<div class="inner">
-		<jsp:include page="WEB-INF/tilesLayout/leftMenu.jsp" flush="true"></jsp:include>
+		<jsp:include page="WEB-INF/tilesLayout/cyberLeftMenu.jsp" flush="true"></jsp:include>
 
 		<div class="mainWrap">
 			<div class="scheduleList">

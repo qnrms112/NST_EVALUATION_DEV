@@ -43,77 +43,111 @@
 				<div class="beforeBox">
 					<div class="paddingBox">
 						<span class="titleImg"></span>
-						<h2 class="titleStyle">추진일정</h2>
-						<div class="btnTop">
-							<div class="btn addBtn"><input type="button" onclick="addRow()" value="추가"></div>
-							<div class="btn delBtn"><input type="button" onclick="delRow()" value="삭제"></div>
-							<script type="text/javascript">
-								function addRow() {
-									  // table element 찾기
-									  const table = document.getElementById('promo');
-									  var listnum = document.getElementById("promo").getElementsByTagName("tr");
-									  var i = listnum.length;
-									  console.log(i);
-									  for(var i = 0; i < 1; i++){
-										  
-										  // 새 행(Row) 추가
-										  const newRow = table.insertRow();
-										  
-										  // 새 행(Row)에 Cell 추가
-										  const newCell1 = newRow.insertCell(0);
-										  const newCell2 = newRow.insertCell(1);
-										  const newCell3 = newRow.insertCell(2);
-										  const newCell4 = newRow.insertCell(3);
-										  
-										  // Cell에 텍스트 추가
-										  newCell1.innerHTML = '<input type="checkbox" name="listInfo">';
-										  newCell2.innerHTML = '<input type="text" placeholder="예) 1. 22년 점검계획확정">';
-										  newCell3.innerHTML = '<input type="date" class="startD">~<input type="date" class="endD">';
-										  newCell4.innerHTML = '<input type="text" placeholder=""></td>';
-										  
-									  }
-									}
+						<h2 class="titleStyle">점검단등록</h2>
+						<!-- 점검단 추가 삭제  -->
+						<section>
+							<div class="listCheck1">
+								<!-- 구성원 검색 -->
+								<div class="searchForm">
+									<table class="searchTable">
+										<tbody>
+											<tr>
+												<td>
+													<select>
+														<option>소속</option>
+														<option>한국건설기술연구원</option>
+														<option>기타</option>
+													</select>
+												</td>
+												<td>
+													<select>
+														<option>부서</option>
+														<option>연구정책실</option>
+														<option>기타</option>
+													</select>
+												</td>
+												<td><input type="text" placeholder="이름조회"><div></div></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 								
-								function delRow(listnum){
-									//var listnum = $('#promo > tr').length;
-									var listnum = document.getElementById("promo").getElementsByTagName("tr");
-									
-									console.log(listnum);
-									const newRow = listnum.deleteRow(listnum);
-								}
-							</script>
-						</div>
-						<form>
-							<table class="table4 step1">
-								<thead>
-									<tr>
-										<th><input type="checkbox" onclick='selectAll(this)'></th>
-										<th>점검단계</th>
-										<th>일정</th>
-										<th>비고</th>
-									</tr>
-								</thead>
-								<tbody id="promo">
-									<tr>
-										<td><input type="checkbox" name="listInfo"></td>
-										<td><input type="text" placeholder="예) 1. 22년 점검계획확정"></td>
-										<td>
-											<input type="date" class="startD">
-											~
-											<input type="date" class="endD">
-										</td>
-										<td><input type="text" placeholder=""></td>
-									</tr>
-								</tbody>
-							</table>
-						</form>
-					</div>
+								<div class="searchResult">
+									<table>
+										<thead>
+											<tr>
+												<th><input type="checkbox" value="셀렉트전체선택"></th>
+												<th>이름</th>
+												<th>소속</th>
+												<th>직책</th>
+												<th>이메일</th>
+												<th>연락처</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><input type="checkbox" value="인물정보"></td>
+												<td>홍길동</td>
+												<td>연구정책실</td>
+												<td>간사</td>
+												<td>edsoft@co.kr</td>
+												<td>010-xxxx-xxxx</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="inoutBox">
+								<div class="in"></div>
+								<div class="out"></div>
+							</div>
+							<div class="listCheck2">
+								<div class="choDel btn">삭제</div>
+								<table class="searchIn">
+									<thead>
+										<tr>
+											<th><input type="checkbox" value="셀렉트전체선택"></th>
+											<th>이름</th>
+											<th>소속</th>
+											<th>직책</th>
+											<th>이메일</th>
+											<th>연락처</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+												<td><input type="checkbox" value="인물정보"></td>
+												<td>정박자</td>
+												<td>연구정책실</td>
+												<td>간사</td>
+												<td>edsoft@co.kr</td>
+												<td>010-xxxx-xxxx</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" value="인물정보"></td>
+												<td>정박자</td>
+												<td>연구정책실</td>
+												<td>간사</td>
+												<td>edsoft@co.kr</td>
+												<td>010-xxxx-xxxx</td>
+											</tr>
+											<tr>
+												<td><input type="checkbox" value="인물정보"></td>
+												<td>정박자</td>
+												<td>연구정책실</td>
+												<td>간사</td>
+												<td>edsoft@co.kr</td>
+												<td>010-xxxx-xxxx</td>
+											</tr>
+										</tbody>
+								</table>
+							</div>
+					</section>
 					<div class="btnBox">
-						<div class="signUp btn"><a href="checkmain.jsp">등록</a></div>
-						<div class="recall btn"><a href="checkmain.jsp">취소</a></div>
+						<div class="btn asign" onClick="location.href='checkmain.jsp'">등록</div>
+						<div class="btn recall" onClick="location.href='checkmain.jsp'">취소</div>
 					</div>
-				</div>
-				
+				</div>		
 			</div>
 		</div>
 	</div><!-- inner -->
