@@ -97,7 +97,7 @@
 											<td>평가명</td>
 											<td>
 												<select name="planCheck">
-													<option value="">::선택하세요::</option>													<option value="">(부설)안전성평가연구소</option>
+													<option value="">::선택하세요::</option>													
 													<option value="">2023xxxxxxxxxxxx</option>
 													<option value="">2022xxxxxxxxxxxxxxxxxxx</option>
 													<option value="">2022xxxxxxxxxxxxxxxx</option>

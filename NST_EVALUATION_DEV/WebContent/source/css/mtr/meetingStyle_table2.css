@@ -14,8 +14,8 @@
 .searchForm table tr td option{background-color: #fff; color:#000;}
 .searchForm td{padding:0;}
 .searchForm td input,.searchForm td select{width:100%; padding:0.5rem 1rem !important;}
-.scheduleList div.addCheck{top: 130px !important;}
-
+/* .scheduleList div.addCheck{top: 130px !important;}
+ */
 
 
 

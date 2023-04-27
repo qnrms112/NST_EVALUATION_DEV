@@ -175,22 +175,22 @@
 							<tr>
 								<td>03</td>
 								<td><img class="logoIn" src="source/img/common/agency_logo3.png">한국기초과학지원연구원</td>
-								<td>점검명ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
+								<td onclick="location.href='chkProcessWhitInfo.jsp'">점검명ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
 								<td>2023.xx.xx</td>
 								<td>홍길동</td>
 								<td>2023.xx.xx</td>
 								<td>2023.xx.xx</td>
-								<td><a href="chkSubmission.jsp">제출</a></td>
+								<td onclick="location.href='chkProcessWhit.jsp'">미제출</td>
 							</tr>
 							<tr>
 								<td>02</td>
 								<td><img class="logoIn" src="source/img/common/agency_logo2.png">(부설)국가녹색기술연구소</td>
-								<td>점검명ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
+								<td onclick="location.href='chkProcessWhitFix.jsp'">점검명ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ</td>
 								<td>2023.xx.xx</td>
 								<td>홍길동</td>
 								<td>2023.xx.xx</td>
 								<td>2023.xx.xx</td>
-								<td>제출</td>
+								<td onclick="location.href='chkProcessModify.jsp'">제출</td>
 								
 							</tr>
 							<tr>

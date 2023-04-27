@@ -1,61 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<style>
-<!--마이페이지 스타일 정의-->
-/* div#infoBox{display: grid; grid-template-columns:1fr 5fr; grid-gap:10px; margin-bottom:20px;} */
-#myImg{display: block; width:100%; background-color:#eee;} 
-.checkInfo{margin-bottom:20px;}
-.checkInfo tr:nth-child(2),
-.checkInfo tr:nth-child(4),
-.checkInfo tr:nth-child(7){grid-template-columns:1fr 5fr !important;}
-.checkInfo tr td:nth-child(2n){text-align:left; padding-left:2rem;}
-
-.scheduleList #mydo tr{display:grid; grid-template-columns:repeat(4, 1fr) !important;}
-.scheduleList #mydo td{display: block;}
-
-
-</style>	
-
+<link rel="stylesheet" type="text/css" href="source/css/myp/mypageStyle.css">
 <jsp:include page="WEB-INF/tilesLayout/header.jsp" flush="true"></jsp:include>
-<script type="text/javascript">
-	$(function(document) {
 
-		var $window = $(window), $document = $(document),
+<div id="container">
+	<!-- test/s -->
+	<div class="inner">
+		<jsp:include page="WEB-INF/tilesLayout/leftMenu.jsp" flush="true"></jsp:include>
 
-		active = 'active';
-
-		function mainTab() {
-			var $mainTab = $('.tabBox'), $mainTabSec = $('#tabContent'), $mainTabList = $mainTab
-					.find('div.tab'), $mainTabMenu = $mainTabList.find('p'), $mainTabCont = $mainTabSec
-					.find('.tabContentStyle');
-
-			$mainTabCont.hide();
-			$mainTabCont.eq(0).show();
-			$mainTabMenu.on('click', function(e) {
-				var $this = $(this), $myList = $this.parent(), myIndex = $this
-						.parent().index();
-				e.preventDefault();
-				$mainTabList.removeClass(active);
-				$myList.addClass(active);
-				$mainTabCont.hide();
-				$mainTabCont.eq(myIndex).show();
-			})
-		}
-		mainTab();
-	});
-</script>
-<body>
-	<div id="container">
-		<div class="mainWrap inner">
-				<jsp:include page="WEB-INF/tilesLayout/leftMenu.jsp" flush="true"></jsp:include>
-			<div class="scheduleList" style="display:block;">
+		<div class="mainWrap">
+			<div class="scheduleList">
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">기본정보</h2>
-				<div id="infoBox"
-					style="display: grid; grid-template-columns: 1fr 5fr; grid-gap: 10px; margin-bottom: 20px;">
-					<div id="myImg"></div>
+				<div id="infoBox">
+					<div id="myImg">
+					</div>
 					<table class="table2 checkInfo">
 						<tbody>
 							<tr>
@@ -96,8 +56,24 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
-				<!-- infoBox -->
+				</div><!-- infoBox -->
+
+				<!-- <span class="titleImg"></span>
+				<h2 class="titleStyle">위원상태</h2>
+				<div id="myState">
+					<table class="table2">
+						<tr>
+							<td>상태</td>
+							<td>점검위원</td>
+							<td>승인일자</td>
+							<td>20xx-xx-xx</td>
+						</tr>
+						<tr>
+							<td>임기</td>
+							<td colspan='3'>20xx-xx-xx ~ 20xx-xx-xx</td>
+						</tr>
+					</table>
+				</div> -->
 				<span class="titleImg"></span>
 				<h2 class="titleStyle">활동내역</h2>
 				<div id="mydo">
@@ -128,6 +104,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-</html>
+	</div><!-- inner -->
+</div>
+<!-- test/e -->
+
