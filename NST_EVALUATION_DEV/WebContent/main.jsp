@@ -142,10 +142,10 @@ $(function(document) {
 					<span class="titleImg"></span>
 					<h2 class="titleStyle">주요일정</h2>
 					<div id="groupBox">
-						<div id="groupName">
+						<div id="groupName" onclick="location.href='cyberMain.jsp'">
 							<ul>
 								<li>기관명</li>
-								<li><a href="cyberMain.jsp" target="_blank">한국과학기술연구원</a></li>
+								<li><a href="#" target="_blank">한국과학기술연구원</a></li>
 								<li>점검명</li>
 								<li>2023 한국과학기술연구원 운영계획점검</li>
 							</ul>
